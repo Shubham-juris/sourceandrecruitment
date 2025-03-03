@@ -24,7 +24,7 @@ const Hero = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        color: "black",
+        color: "Blue",
         overflow: "hidden", 
         px: isMobile ? 1 : 2,
       }}
@@ -41,7 +41,7 @@ const Hero = () => {
           sx={{
             fontSize: isMobile ? "1rem" : "40px",
             lineHeight: isMobile ? 1.3 : "inherit",
-            textShadow: "1px 1px 2px rgba(0,0,0,0.3)",
+            textShadow: "1px 1px 2px rgba(241, 233, 233, 0.3)",
           }}
         >
           Empowering careers, one placement at a time.

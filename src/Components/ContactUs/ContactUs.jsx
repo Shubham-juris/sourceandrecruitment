@@ -52,7 +52,7 @@ const ContactUs = () => {
         margin: "0 auto",
         background: "linear-gradient(135deg,rgba(212, 222, 243, 0.73) 0%,rgba(245, 163, 163, 0.73) 100%)",
         minHeight: "100vh",
-        borderRadius: 4,
+        // borderRadius: 4,
         boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
         overflow: "hidden",
       }}

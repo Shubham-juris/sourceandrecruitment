@@ -16,7 +16,7 @@ const Footer = () => {
         justifyContent: "center",
         py: 2,
         px: 3,
-        mt: 4,
+        // mt: 4,
         backgroundColor: "Blue",
         fontSize: isMobile ? "1rem" : "1.5rem", // Adjusted for readability
         color: "white",

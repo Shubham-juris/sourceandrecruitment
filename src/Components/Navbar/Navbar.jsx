@@ -63,27 +63,35 @@ function Navbar() {
   );
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none', borderBottom: '2px solid #ddd', padding: '10px 0' }}>
+    <AppBar
+      position="fixed" 
+      sx={{
+        backgroundColor: 'transparent', 
+        boxShadow: 'none',
+        borderBottom: 'none', 
+        padding: '10px 0',
+      }}
+    >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#000' }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'Yellow' }}>
           Sources and Recruitment
         </Typography>
 
         {isMobile ? (
           <>
             <IconButton color="inherit" onClick={handleDrawerToggle}>
-              <MenuIcon sx={{ color: 'black' }} />
+              <MenuIcon sx={{ color: 'Yellow' }} />
             </IconButton>
           </>
         ) : (
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#000', fontWeight: 'bold', textTransform: 'uppercase', mx: 1 }}>
+              <Button key={item} sx={{ color: 'Yellow', fontWeight: 'bold', textTransform: 'uppercase', mx: 1 }}>
                 {item}
               </Button>
             ))}
             {Object.keys(dropdownItems).map((item) => (
-              <Button key={item} onClick={(event) => handleMenuOpen(event, item)} sx={{ color: 'Black', fontWeight: 'bold', textTransform: 'uppercase', mx: 1 }}>
+              <Button key={item} onClick={(event) => handleMenuOpen(event, item)} sx={{ color: 'Yellow', fontWeight: 'bold', textTransform: 'uppercase', mx: 1 }}>
                 {item} ▼
               </Button>
             ))}
@@ -91,7 +99,7 @@ function Navbar() {
         )}
 
         <IconButton>
-          <AccountCircleIcon sx={{ color: 'black' }} />
+          <AccountCircleIcon sx={{ color: 'Yellow' }} />
         </IconButton>
       </Toolbar>
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
